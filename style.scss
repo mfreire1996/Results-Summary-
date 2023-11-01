@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 500%);
+    height: 5rem;
+
+    .the-results {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 25px;
+        width: 40%;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            color: hsl(0, 0%, 100%);
+            margin: 1rem;
+        }
+
+        h3, p {
+            color: rgba(175,173,253,255);
+        }
+
+        p {
+            width: 60%;
+        }
+
+        .circle {
+            background-color: hsl(250, 70%, 51%);
+            width: 12.5rem;
+            height: 12.5rem;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 2.5rem 0;
+
+            .white {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .the-results {
+            width: 100%;
+            padding: 2.5rem;
+            position: relative;
+            margin-top: 7rem;
+        }
+    }
+
+    .summary {
+        width: 40%;
+        height: 35rem;
+        border-radius: 0px 20px 20px 10px;
+        box-shadow: 0px 0px 0px 1px #0000000f, 10px 0px 36px 0px #00000029, 0px 10px 36px 0px #00000029;
+
+        .results {
+            position: relative;
+            margin: 4rem 2rem;
+
+            .colored {
+                border-radius: 10px;
+                padding: .5rem;
+                opacity: 0.3;
+                margin: 2rem;
+  
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: #000;
+                    line-height: 1.6;
+                }
+
+                .end {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: -17.5px;
+                }
+
+                .transparent {
+                    color: hsla(0, 0%, 50%, 0.5);                
+                }
+            }
+
+            .reaction {
+                background-color: #FFF6F5;
+                background:
+                linear-gradient(to right, hsl(0, 100%, 67%) 2px, transparent 2px) 0 0,
+                linear-gradient(to right, hsl(0, 100%, 67%)  2px, transparent 2px) 0 100%,
+                linear-gradient(to left, hsl(0, 100%, 67%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to left, hsl(0, 100%, 67%) 2px, transparent 2px) 100% 100%,
+                linear-gradient(to bottom, hsl(0, 100%, 67%) 2px, transparent 2px) 0 0,
+                linear-gradient(to bottom, hsl(0, 100%, 67%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to top, hsl(0, 100%, 67%) 2px, transparent 2px) 0 100%,
+                linear-gradient(to top, hsl(0, 100%, 67%) 2px, transparent 2px) 100% 100%;
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                color: hsl(0, 100%, 47%);
+                opacity: 1;
+            }
+
+            .memory {
+                background-color: #FFFBF2;
+                background:
+                linear-gradient(to right, hsl(39, 100%, 56%) 2px, transparent 2px) 0 0,
+                linear-gradient(to right, hsl(39, 100%, 56%)  2px, transparent 2px) 0 100%,
+                linear-gradient(to left, hsl(39, 100%, 56%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to left, hsl(39, 100%, 56%) 2px, transparent 2px) 100% 100%,
+                linear-gradient(to bottom, hsl(39, 100%, 56%) 2px, transparent 2px) 0 0,
+                linear-gradient(to bottom, hsl(39, 100%, 56%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to top, hsl(39, 100%, 56%) 2px, transparent 2px) 0 100%,
+                linear-gradient(to top, hsl(39, 100%, 56%) 2px, transparent 2px) 100% 100%;
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                color: hsl(39, 100%, 36%);
+                opacity: 1;
+            }
+
+            .verbal {
+                background-color: #f2fafa;
+                background:
+                linear-gradient(to right, hsl(166, 100%, 37%) 2px, transparent 2px) 0 0,
+                linear-gradient(to right, hsl(166, 100%, 37%)  2px, transparent 2px) 0 100%,
+                linear-gradient(to left, hsl(166, 100%, 37%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to left, hsl(166, 100%, 37%) 2px, transparent 2px) 100% 100%,
+                linear-gradient(to bottom, hsl(166, 100%, 37%) 2px, transparent 2px) 0 0,
+                linear-gradient(to bottom, hsl(166, 100%, 37%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to top, hsl(166, 100%, 37%) 2px, transparent 2px) 0 100%,
+                linear-gradient(to top, hsl(166, 100%, 37%) 2px, transparent 2px) 100% 100%;
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                color: hsl(166, 100%, 17%);
+                opacity: 1;
+            }
+
+            .visual {
+                background-color: #f3f3fd;
+                background:
+                linear-gradient(to right, hsl(234, 85%, 45%) 2px, transparent 2px) 0 0,
+                linear-gradient(to right, hsl(234, 85%, 45%)  2px, transparent 2px) 0 100%,
+                linear-gradient(to left, hsl(234, 85%, 45%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to left, hsl(234, 85%, 45%) 2px, transparent 2px) 100% 100%,
+                linear-gradient(to bottom, hsl(234, 85%, 45%) 2px, transparent 2px) 0 0,
+                linear-gradient(to bottom, hsl(234, 85%, 45%) 2px, transparent 2px) 100% 0,
+                linear-gradient(to top, hsl(234, 85%, 45%) 2px, transparent 2px) 0 100%,
+                linear-gradient(to top, hsl(234, 85%, 45%) 2px, transparent 2px) 100% 100%;
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                color: hsl(234, 85%, 25%);
+                opacity: 1;
+            }
+            .button {
+                background-color: hsl(224, 30%, 27%);
+                color: hsl(0, 0%, 100%);
+                border: none;
+                border-radius: 25px;
+                width: 95%;
+                height: 2.75rem;
+            }
+
+            .button:active {
+                background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            }
+        }
+}
+
+@media screen and (max-width: 800px) {
+    .summary {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
